@@ -792,6 +792,11 @@ require('lazy').setup({
       },
     },
     opts = {
+      servers = {
+        gdscript = {
+          cmd = { 'netcat', 'localhost', '6005' },
+        },
+      },
       notify_on_error = false,
       format_on_save = function(bufnr)
         -- Disable "format_on_save lsp_fallback" for languages that don't
